@@ -1,60 +1,84 @@
-html{
-    background-color: #E8D4B4;
-    margin-left:10%;
-}
-.navBar{
-    display:flex;
-    justify-content: space-evenly;
-    font-size: 20px;
-}
-
-.meet{
-    display:flex;
-    justify-content: center;
-
-    h1{
-        font-size: largest;
-        border: 1px solid black;
-        padding:1rem;
-        background-color: #EBE6E6;
-    }
-}
-
-.teamMember{
-    width:40%;
-    margin:1%;
-    align-content: center;
-    border:5px solid #FF896B;
-    background-color: #E8D4B4;
-    padding:1rem;
-
-}
-.headShotContainer{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    width: 90%;
-    background-color: #EBE6E6; 
-    border:10px solid #FF896B;
-
+html {
+  background-color: @primaryLight;
+  margin-left: 10%;
   
+  @media @tablet{
+    .tablet-format;
 }
-.projectLeader{
-    width:100%;
-    justify-content: center;
-    text-align: center;
-    padding:1rem;
+  @media @lgtablet{
+      .lg-tablet-format;
+  }
+  @media @mobile{
+    .media-format;
+}
+ 
 }
 
-.headshot{
-    width:20%;
-    height:auto;
+.navBar {
+  .even();
+  font-size: 20px;
+  a {
+    .remove-nav-deco;
+  }
 }
+
+.meet {
+  .center();
+
+  h1 {
+    font-size: largest;
+    border: 1px solid black;
+    padding: 1rem;
+    background: @secondaryDark;
+    text-decoration: underline;
+  }
+}
+
+.teamMember {
+  .small-border();
+  width: 40%;
+  margin: 1% auto;
+  align-content: center;
+  justify-content: center;
+  background-color: @primaryLight;
+  padding: 1rem;
+  display: flex;
+
+  * {
+    .remove-nav-deco;
+  }
+
+  img {
+    height: 40vh;
+    .small-border;
+    justify-content: center;
+  }
+
+  h4 {
+    font-size: largest;
+    align-content: center;
+  }
+
+
+
+
+}
+.headShotContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  width: 90%;
+  background-color: @secondaryDark;
+  .big-border();
+}
+
 
 nav {
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-right:5%;
+  .even();
+  flex-wrap: wrap;
+  margin-right: 5%;
+  *{
+    .remove-nav-deco;
+  }
 }

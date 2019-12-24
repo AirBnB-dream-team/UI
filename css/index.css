@@ -1,11 +1,85 @@
 html {
-  background-color: #E8D4B4;
+  background-color: #e8d4b4;
   margin-left: 10%;
+}
+@media (max-width:1200px) {
+  html body {
+    max-width: 1200px;
+  }
+  html .headShotContainer {
+    padding: 1%;
+    display: flex;
+  }
+  html .teamMember {
+    width: 40%;
+    align-items: center;
+    flex-flow: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+  }
+  html .teamMember div {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  html .teamMember img {
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width:800px) {
+  html .teamMember div {
+    margin: 0 auto;
+    padding: 0;
+  }
+  html .teamMember div img {
+    border: none;
+  }
+}
+@media (max-width:500px) {
+  html body {
+    max-width: 500px;
+  }
+  html .headShotContainer {
+    padding: 1%;
+    display: flex;
+  }
+  html .teamMember {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  html .teamMember div {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  html .teamMember img {
+    width: 99%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 .navBar {
   display: flex;
   justify-content: space-evenly;
   font-size: 20px;
+}
+.navBar a {
+  text-decoration: none;
+  color: black;
 }
 .meet {
   display: flex;
@@ -15,15 +89,31 @@ html {
   font-size: largest;
   border: 1px solid black;
   padding: 1rem;
-  background-color: #EBE6E6;
+  background: #ebe6e6;
+  text-decoration: underline;
 }
 .teamMember {
+  border: 5px solid #ff896b;
   width: 40%;
-  margin: 1%;
+  margin: 1% auto;
   align-content: center;
-  border: 5px solid #FF896B;
-  background-color: #E8D4B4;
+  justify-content: center;
+  background-color: #e8d4b4;
   padding: 1rem;
+  display: flex;
+}
+.teamMember * {
+  text-decoration: none;
+  color: black;
+}
+.teamMember img {
+  height: 40vh;
+  border: 5px solid #ff896b;
+  justify-content: center;
+}
+.teamMember h4 {
+  font-size: largest;
+  align-content: center;
 }
 .headShotContainer {
   display: flex;
@@ -31,22 +121,16 @@ html {
   justify-content: space-around;
   text-align: center;
   width: 90%;
-  background-color: #EBE6E6;
-  border: 10px solid #FF896B;
-}
-.projectLeader {
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-}
-.headshot {
-  width: 20%;
-  height: auto;
+  background-color: #ebe6e6;
+  border: 10px solid #ff896b;
 }
 nav {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-right: 5%;
+}
+nav * {
+  text-decoration: none;
+  color: black;
 }
