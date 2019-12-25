@@ -17,6 +17,7 @@
 .center() {
   display: flex;
   justify-content: center;
+  
 }
 .small-border() {
   border: 5px solid @primaryDark;
@@ -33,7 +34,7 @@
 .media-format(){
   //about mobile
     body{
-        max-width: @max-width;
+        max-width:100%;
     }
     .headShotContainer{
         padding:1%;
@@ -74,27 +75,51 @@
         width:50%;
       }
     }
-    .top-section{
-      display:flex;
+    .top-section-landing{
+      .center;
       flex-direction: column;
-      justify-content: center;
       padding:3%;
       .top-left{
+        
         width:100%;
-        justify-content: center;
+        .center;
+        flex-direction: column;
+        
       }
       .logo-container{
-        margin-top:2vh;
-        width:100%;
+        max-width:90%;
         .center();
+        margin: 2vh auto;
+      }
+     
+    }
+    #logo{
+      width:100%;
+      margin:0 auto;
+      
+     }
+    .login-section{
+      width:100%;
+      margin-right:5%;
+    }
+    .random-gif-section{
+      max-width: @max-width;
+      width:100%;
+      margin:0;
 
-        #logo{
-          .center();
+      .row-1{
+        margin:0;
+        max-width: 100%;
+        .center;
+        .gif{
+          width:100%;
+        }
+        .vid{
           width:100%;
           height:30vh;
         }
-
       }
+      
     }
     
 }
@@ -116,9 +141,6 @@
         flex-flow: wrap;
         .center();
         padding:1%;
-
-       
-
         div{
            padding:10px;
            width:100%;
@@ -133,6 +155,65 @@
             padding:0;
         }
     }
+
+    //landing tablet
+    .headercontainer{
+      display:flex;
+      .navLogo img{
+        width:30%;
+      }
+      .navBar{
+        width:50%;
+      }
+    }
+    .top-section-landing{
+      .center;
+      flex-direction: column;
+      padding:3%;
+      .top-left{
+        width:100%;
+        flex-direction: column;
+        .center;
+        text-align: center;
+        
+      }
+      .logo-container{
+        margin-top:2vh;
+        max-width:90%;
+        .center();
+      }
+     
+    }
+    #logo{
+      width:100%;
+      margin-left:15%;
+      
+     }
+    .login-section{
+      width:100%;
+      margin-right:5%;
+    }
+    .random-gif-section{
+      max-width: @max-width;
+      width:100%;
+      margin:0 auto;
+
+      .row-1{
+        margin:0;
+        max-width: 100%;
+        .center;
+        .gif{
+          margin-left: 20%;
+          width:100%;
+        }
+        .vid{
+          width:100%;
+          height:30vh;
+        }
+      }
+      
+    }
+
     
 }
 .lg-tablet-format(){
