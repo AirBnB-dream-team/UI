@@ -1,17 +1,16 @@
 html {
   background-color: @primaryLight;
   margin-left: 10%;
-  
-  @media @tablet{
+
+  @media @tablet {
     .tablet-format;
-}
-  @media @lgtablet{
-      .lg-tablet-format;
   }
-  @media @mobile{
+  @media @lgtablet {
+    .lg-tablet-format;
+  }
+  @media @mobile {
     .media-format;
-}
- 
+  }
 }
 
 .navBar {
@@ -58,10 +57,6 @@ html {
     font-size: largest;
     align-content: center;
   }
-
-
-
-
 }
 .headShotContainer {
   display: flex;
@@ -73,12 +68,11 @@ html {
   .big-border();
 }
 
-
 nav {
   .even();
   flex-wrap: wrap;
   margin-right: 5%;
-  *{
+  * {
     .remove-nav-deco;
   }
 }
