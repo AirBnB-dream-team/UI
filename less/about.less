@@ -1,0 +1,50 @@
+//stuff specifically styled on the about page
+
+
+
+.meet {
+  .center();
+
+  h1 {
+    font-size: largest;
+    border: 1px solid black;
+    padding: 1rem;
+    background: @secondaryDark;
+    text-decoration: underline;
+  }
+}
+
+.teamMember {
+  .small-border();
+  .center();
+  width: 40%;
+  margin: 1% auto;
+  background-color: @primaryLight;
+  padding: 1rem;
+  display: flex;
+
+  * {
+    .remove-nav-deco;
+  }
+
+  img {
+    height: 40vh;
+    .small-border;
+    justify-content: center;
+  }
+
+  h4 {
+    font-size: largest;
+    align-content: center;
+  }
+}
+.headShotContainer {
+  display: flex;
+  flex-direction:row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  width: 90%;
+  background-color: @secondaryDark;
+  .big-border();
+}
