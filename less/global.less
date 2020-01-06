@@ -1,52 +1,16 @@
-//styling rules for whole site
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 html {
-    background-color: @primaryLight;
-    margin-left: 10%;
-  
-    @media @tablet {
-      .tablet-format;
-    }
-    @media @lgtablet {
-      .lg-tablet-format;
-    }
-    @media @mobile {
-      .media-format;
-    }
-  }
-  header {
-    display: flex;
-    justify-content: space-evenly;
-  
-    .navLogo {
-      width: 50%;
-      img{
-          width:10%;
-      }
-    }
-  
-    
-      
-     
-     
-      
-    
-  }
-  nav {
-    width: 50%;
-    font-size: 20px;
-    .even();
-    margin-right: 5%;
-    a {
-      .remove-nav-deco;
-     
-    }
-    :hover{
-      color:orange;
-    }
-    
+  font-size: 62.5%;
 }
-.anchor {
-  text-decoration: underline; 
-  font-size: x-large;    
+
+img {
+  max-width: 100%;
+  height: auto;
 }
-  
