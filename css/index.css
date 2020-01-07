@@ -133,35 +133,103 @@ html {
 }
 img {
   max-width: 100%;
-  height: auto;
+}
+body {
+  background-color: #ff896b;
 }
 .top-nav {
   display: flex;
   justify-content: space-between;
 }
 .top-nav a {
-  width: 20%;
+  width: 10%;
   font-size: 2rem;
   padding-bottom: 2%;
   padding-top: 2%;
+  color: #ebe6e6;
+}
+.top-nav .search-container {
+  min-width: 100px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.top-nav .search-container .btn {
+  padding: 3px 5px 3px 5px;
+  margin: 2px;
+  border: 1px solid #ebe6e6;
+  background-color: #e8d4b4;
+}
+.top-nav .logo {
+  width: auto;
+  height: auto;
+  padding: 5%;
+  background-color: #f3f3f3;
 }
 form {
   width: 100%;
   height: 50%;
 }
-.search-container {
-  width: 50%;
-  padding-left: 2%;
+.banner-box {
+  background-color: #f3f3f3;
+  padding: 2%;
+  background-image: url("/images/marble-texture.png");
 }
-.search-container i {
-  flex-shrink: 2%;
+.form-box {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-color: #f3f3f3;
+  padding: 3%;
+  font-size: 3rem;
+  line-height: 45px;
+  border: 10px solid #e8d4b4;
+  width: 40%;
 }
-.logo {
-  width: auto;
-  height: auto;
-  display: inline-block;
+@media screen and (max-width: 768px) {
+  .form-box {
+    padding: 2%;
+    top: 30%;
+    left: 50%;
+    font-size: 2rem;
+    line-height: 22px;
+    width: 40%;
+    border: 4px solid #e8d4b4;
+  }
 }
-.btn {
-  border: 1px solid #ebe6e6;
-  background-color: #e8d4b4;
+.form-box #btn-submit {
+  padding: 10px 50px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-image: url("/images/marble-texture.png");
+  padding: px;
+}
+.form-box #btn-submit:hover {
+  color: white;
+  border: 1px solid black;
+}
+@media screen and (max-width: 768px) {
+  .form-box #btn-submit {
+    margin-top: 10px;
+    padding: 5px 30px;
+  }
+}
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #e8d4b4;
+  padding: 4px;
+  color: #ff896b;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  input[type="text"],
+  input[type="date"],
+  input[type="number"] {
+    width: 80%;
+    height: 25px;
+  }
 }

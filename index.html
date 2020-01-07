@@ -25,7 +25,7 @@
             </button>
           </form>
         </div>
-        <a href="#">Sign Up</a>
+       <a href="#" id="active">Sign Up</a>
         <a href="#">Login</a>
         <a href="#">Host</a>
       </nav>
@@ -35,21 +35,22 @@
           alt="sunlit kitchen"
           id="banner"
         />
-        <div class="form-box">
-          <form>
-            <fieldset>
-              Where to:<br />
-              <input type="text" name="location" /><br />
-              Check-in:<br />
-              <input type="date" name="date" /><br />
-              Checkout:<br />
-              <input type="date" name="date" /><br />
-              How many:<br />
-              <input type="number" name="people" />
-            </fieldset>
-          </form>
-        </div>
       </section>
     </header>
+    <div class="form-box">
+      <form>
+        <fieldset>
+          Where to:<br />
+          <input type="text" name="location" /><br />
+          Check-in:<br />
+          <input type="date" name="date" />
+          Checkout:
+          <input type="date" name="date" /><br>
+          How many:
+          <input type="number" name="people" /><br>
+          <button type="submit" id="btn-submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
