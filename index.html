@@ -6,30 +6,50 @@
     <meta name="description" content="landing page" />
     <link rel="stylesheet" href="./css/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <!-- navigation -->
   <body>
     <header>
       <nav class="top-nav">
-    <img src="./images/favicon.ico" alt="BnB logo" />
+        <img src="./images/favicon.ico" alt="BnB logo" id="logo" />
         <div class="search-container">
-            <input type="text" placeholder="Search..." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+          <form>
+            <input type="text" placeholder="Search..." name="search" />
+            <button type="submit" class="btn">
+              <i class="fa fa-search"></i>
+            </button>
           </form>
         </div>
         <a href="#">Sign Up</a>
         <a href="#">Login</a>
         <a href="#">Host</a>
-    </nav>
-    
-    <img src="./images/daniil-silantev-nBuiLbz_j4A-unsplash.jpg" alt="sunlit kitchen" id="banner">
-      <div class="form-box">
-        
-      </div>
+      </nav>
+      <section class="banner-box">
+        <img
+          src="./images/daniil-silantev-nBuiLbz_j4A-unsplash.jpg"
+          alt="sunlit kitchen"
+          id="banner"
+        />
+        <div class="form-box">
+          <form>
+            <fieldset>
+              Where to:<br />
+              <input type="text" name="location" /><br />
+              Check-in:<br />
+              <input type="date" name="date" /><br />
+              Checkout:<br />
+              <input type="date" name="date" /><br />
+              How many:<br />
+              <input type="number" name="people" />
+            </fieldset>
+          </form>
+        </div>
+      </section>
     </header>
-
-
   </body>
 </html>
