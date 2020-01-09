@@ -1,30 +1,35 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 .explanation p {
   line-height: 49px;
   font-size: 3rem;
   // margin: 5%;
   font-family: "Raleway", georgia;
-  padding: 3%;
+  padding: 10%;
+  margin: 1%;
   background-color: rgba(43, 23, 15, 0.4);
   color: white;
   @media @tablet {
-    line-height: 20px;
-    font-size: 2rem;
-    margin: 5%;
-    padding: 3%;
+    line-height: 30px;
+    font-size: 2.4rem;
+    padding: 10%;
+    margin: 1%;
   }
   @media @mobile {
     font-size: 2rem;
+    line-height: 25px;
   }
 }
 
 .explanation {
-  background-image: url("/UI/images/tyler-nix-V3dHmb1MOXM-unsplash.jpg");
+  background-image: url("/images/tyler-nix-V3dHmb1MOXM-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  @media @mobile {
+    width: 100%;
+  }
 }
 
 .feature-box {
@@ -35,13 +40,19 @@
 .features {
   width: 55.55%;
   padding: 2%;
+  margin: 1%;
   background-color: #f3f3f3;
   font-family: "Raleway", georgia;
   font-size: 3rem;
   line-height: 35px;
+  text-align: left;
   @media @tablet {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 20px;
+    margin: 3%;
+  }
+  @media @mobile {
+    font-size: 1.8rem;
   }
 }
 
@@ -51,8 +62,11 @@
   padding-bottom: 10px;
   text-align: center;
   @media @tablet {
-    padding-bottom: 10px;
-    font-size: 2rem;
+    padding-bottom: 20px;
+    font-size: 3rem;
+  }
+  @media @mobile {
+    font-size: 2.5rem;
   }
 }
 
@@ -94,17 +108,31 @@
   50% {
     transform: rotate(0deg);
     left: 500px;
-  }
-  55% {
-    transform: rotate(0deg);
-    left: 500px;
+    @media @tablet {
+      left: 200px;
+    }
+    @media @mobile {
+      left: 0px;
+    }
   }
   75% {
     transform: rotate(0deg);
     left: 500px;
+    @media @tablet {
+      left: 200px;
+    }
+    @media @mobile {
+      left: 100px;
+    }
   }
   100% {
     transform: rotate(-360deg);
     left: 250px;
+    @media @tablet {
+      left: 300px;
+    }
+    @media @mobile {
+      left: 800px;
+    }
   }
 }
