@@ -1,50 +1,140 @@
 //stuff specifically styled on the about page
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 
+// .meet {
+//   .center();
 
+//   h1 {
+//     font-size: largest;
+//     border: 1px solid black;
+//     padding: 1rem;
+//     background: @secondaryDark;
+//     text-decoration: underline;
+//   }
+// }
 
-.meet {
-  .center();
+// .teamMember {
+//   .small-border();
+//   .center();
+//   width: 40%;
+//   margin: 1% auto;
+//   background-color: @primaryLight;
+//   padding: 1rem;
+//   display: flex;
 
-  h1 {
-    font-size: largest;
-    border: 1px solid black;
-    padding: 1rem;
-    background: @secondaryDark;
-    text-decoration: underline;
-  }
+//   * {
+//     .remove-nav-deco;
+//   }
+
+//   img {
+//     height: 40vh;
+//     .small-border;
+//     justify-content: center;
+//   }
+
+//   h4 {
+//     font-size: largest;
+//     align-content: center;
+//   }
+// }
+// .headShotContainer {
+//   display: flex;
+//   flex-direction: row-reverse;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+//   text-align: center;
+//   width: 90%;
+//   background-color: @secondaryDark;
+//   .big-border();
+// }
+
+.headercontainer {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #f3f3f3;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+
+.navBar a {
+  font-size: 20px;
+  color: #f3f3f3;
+}
+
+.logoIMG {
+  width: 45%;
+  height: auto;
+}
+
+.headShot {
+  width: 50%;
+}
+
+.headShotContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .teamMember {
-  .small-border();
-  .center();
-  width: 40%;
-  margin: 1% auto;
-  background-color: @primaryLight;
-  padding: 1rem;
+  background-color: #e8d4b4;
+  width: 50%;
+  margin: 2%;
+  padding: 5%;
+  border-radius: 5%;
+  border: 1px solid black;
+  box-shadow: 5px 10px 18px #888888;
   display: flex;
+}
 
-  * {
-    .remove-nav-deco;
-  }
+.teamMember h4 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  width: 130%;
+  font-family: "Permanent Marker", georgia;
+}
 
-  img {
-    height: 40vh;
-    .small-border;
-    justify-content: center;
-  }
-
-  h4 {
-    font-size: largest;
-    align-content: center;
+.teamMember .github {
+  margin: 0 0 0 auto;
+  display: flex;
+  @media screen and (max-width: 800px) {
+    width: 60%;
   }
 }
-.headShotContainer {
+
+.profile-name {
+  font-size: 45px;
+  height: auto;
+  width: 100%;
   display: flex;
-  flex-direction:row-reverse;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  font-family: "Permanent Marker", georgia;
+  @media screen and (max-width: 800px) {
+    font-size: 20px;
+  }
+}
+
+.meet {
+  margin: auto;
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/UI/images/markus-petritz--LFe6Prglw4-unsplash.jpg");
+}
+
+.meet h1 {
+  color: #ff896b;
+  text-shadow: -2px 0 white, 0 1px white, 1px 0 black, 0 -1px black;
+  font-size: 8rem;
   text-align: center;
-  width: 90%;
-  background-color: @secondaryDark;
-  .big-border();
+  padding-top: 10rem;
 }

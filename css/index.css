@@ -1,3 +1,5 @@
+@tablet (max-width: 800px);
+@mobile (max-width: 500px);
 html,
 body,
 div,
@@ -137,99 +139,332 @@ img {
 body {
   background-color: #ff896b;
 }
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
+}
 .top-nav {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  border: 1px solid #f3f3f3;
 }
 .top-nav a {
-  width: 10%;
-  font-size: 2rem;
-  padding-bottom: 2%;
-  padding-top: 2%;
-  color: #ebe6e6;
-}
-.top-nav .search-container {
-  min-width: 100px;
   display: flex;
-  position: relative;
+  justify-content: space-evenly;
+  width: 100%;
   align-items: center;
-}
-.top-nav .search-container .btn {
-  padding: 3px 5px 3px 5px;
-  margin: 2px;
-  border: 1px solid #ebe6e6;
-  background-color: #e8d4b4;
-}
-.top-nav .logo {
-  width: auto;
-  height: auto;
-  padding: 5%;
-  background-color: #f3f3f3;
+  font-size: 20px;
+  color: #f3f3f3;
 }
 form {
   width: 100%;
-  height: 50%;
+  padding: 5%;
 }
-.banner-box {
+#banner-box {
   background-color: #f3f3f3;
   padding: 2%;
-  background-image: url("/images/marble-texture.png");
+  background-image: url("/UI/images/daniil-silantev-nBuiLbz_j4A-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 1px 14px 9px 4px #212021;
 }
 .form-box {
   display: flex;
-  position: absolute;
-  top: 40%;
-  left: 50%;
+  flex-direction: column;
+  padding: 1%;
   background-color: #f3f3f3;
-  padding: 3%;
-  font-size: 3rem;
-  line-height: 45px;
   border: 10px solid #e8d4b4;
   width: 40%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .form-box {
     padding: 2%;
-    top: 30%;
-    left: 50%;
     font-size: 2rem;
     line-height: 22px;
     width: 40%;
     border: 4px solid #e8d4b4;
   }
 }
-.form-box #btn-submit {
-  padding: 10px 50px;
-  border-radius: 3px;
-  cursor: pointer;
-  background-image: url("/images/marble-texture.png");
-  padding: px;
-}
-.form-box #btn-submit:hover {
-  color: white;
-  border: 1px solid black;
-}
-@media screen and (max-width: 768px) {
-  .form-box #btn-submit {
-    margin-top: 10px;
-    padding: 5px 30px;
+@media screen and (max-width: 500px) {
+  .form-box {
+    width: 50%;
+    padding: 1%;
   }
 }
-input[type="text"],
-input[type="date"],
-input[type="number"] {
-  width: 100%;
-  height: 30px;
-  border: 1px solid #e8d4b4;
-  padding: 4px;
-  color: #ff896b;
-  border-radius: 5px;
+.form-box .btn-submit {
+  margin: 5% 15%;
+  padding: 20px 100px;
+  border-radius: 3px;
+  width: 70%;
+  font-size: 2rem;
+  cursor: pointer;
+  background-image: url("/images/marble-texture.png");
 }
-@media screen and (max-width: 768px) {
-  input[type="text"],
-  input[type="date"],
-  input[type="number"] {
+.form-box .btn-submit:hover {
+  border: 2px solid #e8d4b4;
+}
+@media screen and (max-width: 800px) {
+  .form-box .btn-submit {
+    padding: 5px 30px;
+    margin: 5% 10%;
     width: 80%;
-    height: 25px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form-box .btn-submit {
+    padding: 4px 50px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .form-box .btn-submit {
+    width: 80%;
+    padding: 3px 50px;
+  }
+}
+.headercontainer {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #f3f3f3;
+}
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+.navBar a {
+  font-size: 20px;
+  color: #f3f3f3;
+}
+.logoIMG {
+  width: 45%;
+  height: auto;
+}
+.headShot {
+  width: 50%;
+}
+.headShotContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.teamMember {
+  background-color: #e8d4b4;
+  width: 50%;
+  margin: 2%;
+  padding: 5%;
+  border-radius: 5%;
+  border: 1px solid black;
+  box-shadow: 5px 10px 18px #888888;
+  display: flex;
+}
+.teamMember h4 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  width: 130%;
+  font-family: "Permanent Marker", georgia;
+}
+.teamMember .github {
+  margin: 0 0 0 auto;
+  display: flex;
+}
+@media screen and (max-width: 800px) {
+  .teamMember .github {
+    width: 60%;
+  }
+}
+.profile-name {
+  font-size: 30px;
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  font-family: "Permanent Marker", georgia;
+}
+@media screen and (max-width: 800px) {
+  .profile-name {
+    font-size: 20px;
+  }
+}
+.meet {
+  margin: auto;
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/UI/images/markus-petritz--LFe6Prglw4-unsplash.jpg");
+}
+.meet h1 {
+  color: #ff896b;
+  text-shadow: -2px 0 white, 0 1px white, 1px 0 black, 0 -1px black;
+  font-size: 8rem;
+  text-align: center;
+  padding-top: 10rem;
+}
+.footer-section {
+  display: flex;
+  background-color: #FFFFFF;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20%;
+}
+.footer-section a {
+  color: black;
+  font-size: 2rem;
+  padding: 2%;
+}
+.footer-section a:hover {
+  color: grey;
+}
+.footer-section nav {
+  width: 100%;
+  padding-top: 2%;
+}
+@media screen and (max-width: 800px) {
+  .footer-section nav {
+    padding-top: 3%;
+    font-size: 1rem;
+  }
+}
+.icons {
+  width: 20%;
+  margin: 0 0 0 auto;
+  font-size: 3rem;
+}
+@media screen and (max-width: 800px) {
+  .icons {
+    width: 40%;
+    font-size: 2rem;
+  }
+}
+.icons ul {
+  display: flex;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+.explanation p {
+  line-height: 49px;
+  font-size: 3rem;
+  font-family: "Raleway", georgia;
+  padding: 3%;
+  background-color: rgba(43, 23, 15, 0.4);
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .explanation p {
+    line-height: 20px;
+    font-size: 2rem;
+    margin: 5%;
+    padding: 3%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .explanation p {
+    font-size: 2rem;
+  }
+}
+.explanation {
+  background-image: url("/UI/images/tyler-nix-V3dHmb1MOXM-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.feature-box {
+  background-color: #f3f3f3;
+  display: flex;
+}
+.features {
+  width: 55.55%;
+  padding: 2%;
+  background-color: #f3f3f3;
+  font-family: "Raleway", georgia;
+  font-size: 3rem;
+  line-height: 35px;
+}
+@media screen and (max-width: 800px) {
+  .features {
+    font-size: 1.5rem;
+    line-height: 20px;
+  }
+}
+.features h4 {
+  font-weight: bold;
+  font-size: 4rem;
+  padding-bottom: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .features h4 {
+    padding-bottom: 10px;
+    font-size: 2rem;
+  }
+}
+.easy {
+  text-align: center;
+  font-family: "Raleway", georgia;
+  font-size: 5rem;
+  padding: 1%;
+  margin: 2%;
+  width: 15%;
+  border-radius: 2px;
+  background-color: yellow;
+  animation-name: easy_baby;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+@media screen and (max-width: 800px) {
+  .easy {
+    font-size: 3rem;
+    padding: 1%;
+    margin: 2%;
+    width: 15%;
+  }
+}
+@keyframes easy_baby {
+  0% {
+    transform: rotate(0deg);
+    left: 0px;
+  }
+  25% {
+    transform: rotate(20deg);
+    left: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+  55% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+  75% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 250px;
   }
 }
