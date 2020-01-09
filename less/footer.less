@@ -3,14 +3,14 @@
     display: flex;
     background-color: #FFFFFF;
     flex-direction: row;
-    justify-content: space-between;
-    height: 20%;
 }
 
 .footer-section a {
     color: black;
-    font-size: 2rem;
-    padding: 2%;
+    font-size: 3rem;
+    @media @tablet {
+        font-size: 2rem;
+    }
 }
 
 .footer-section a:hover {
@@ -18,11 +18,12 @@
 }
 
 .footer-section nav {
-    width: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
     padding-top: 2%;
-    @media screen and (max-width: 800px) {
-        padding-top: 3%;
-        font-size: 1rem;
+    @media @tablet {
+        width: 100%;
     }
 }
 
