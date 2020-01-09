@@ -190,6 +190,11 @@ header .navLogo {
 header .navLogo img {
   width: 10%;
 }
+header .navBar {
+  display: flex;
+  justify-content: safe;
+  margin: 0, 5%;
+}
 nav {
   width: 50%;
   font-size: 20px;
