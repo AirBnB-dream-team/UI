@@ -199,6 +199,11 @@ form {
   width: 50%;
   border: 5px solid white;
 }
+@media (max-width: 1000px) {
+  .form-box {
+    width: 60%;
+  }
+}
 .form-box .btn-submit {
   margin: 5% 2%;
   padding: 25px 50px;
@@ -211,24 +216,26 @@ form {
 .form-box .btn-submit:hover {
   border: 2px solid black;
 }
+@media (max-width: 1000px) {
+  .form-box .btn-submit {
+    width: 250px;
+    font-size: 3rem;
+    padding: 15px 30px;
+  }
+}
 @media (max-width: 800px) {
   .form-box .btn-submit {
-    padding: 20px 70px;
-    margin: 5% 13%;
-    width: 80%;
-    font-size: 1.5rem;
+    padding: 10px 30px;
+    margin: 5% 2%;
+    width: 250px;
+    font-size: 2rem;
   }
 }
 @media (max-width: 500px) {
   .form-box .btn-submit {
-    padding: 10px 70px;
-    width: 50%;
-  }
-}
-@media (max-width: 1000px) {
-  .form-box .btn-submit {
-    width: 80%;
-    padding: 3px 50px;
+    padding: 5px 10px;
+    width: 150px;
+    font-size: 2rem;
   }
 }
 .footer-section {
