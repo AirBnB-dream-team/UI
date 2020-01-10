@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+.explanation p {
+  line-height: 49px;
+  font-size: 3rem;
+  // margin: 5%;
+  font-family: "Raleway", georgia;
+  padding: 10%;
+  margin: 1%;
+  background-color: rgba(43, 23, 15, 0.4);
+  color: white;
+  @media @tablet {
+    line-height: 30px;
+    font-size: 2.4rem;
+    padding: 10%;
+    margin: 1%;
+  }
+  @media @mobile {
+    font-size: 2rem;
+    line-height: 25px;
+  }
+}
+
+.explanation {
+  background-image: url("/images/tyler-nix-V3dHmb1MOXM-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  @media @mobile {
+    width: 100%;
+  }
+}
+
+.feature-box {
+  background-color: #f3f3f3;
+  display: flex;
+}
+
+.features {
+  width: 55.55%;
+  padding: 2%;
+  margin: 1%;
+  background-color: #f3f3f3;
+  font-family: "Raleway", georgia;
+  font-size: 3rem;
+  line-height: 35px;
+  text-align: left;
+  @media @tablet {
+    font-size: 2rem;
+    line-height: 20px;
+    margin: 3%;
+  }
+  @media @mobile {
+    font-size: 1.8rem;
+  }
+}
+
+.features h4 {
+  font-weight: bold;
+  font-size: 4rem;
+  padding-bottom: 10px;
+  text-align: center;
+  @media @tablet {
+    padding-bottom: 20px;
+    font-size: 3rem;
+  }
+  @media @mobile {
+    font-size: 2.5rem;
+  }
+}

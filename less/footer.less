@@ -1,0 +1,41 @@
+.footer-section {
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+}
+
+.footer-section a {
+  color: black;
+  font-size: 3rem;
+  @media @tablet {
+    font-size: 2rem;
+  }
+}
+
+.footer-section a:hover {
+  color: grey;
+}
+
+.footer-section nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2%;
+  @media @tablet {
+    width: 100%;
+  }
+}
+
+.icons {
+  width: 20%;
+  margin: 0 0 0 auto;
+  font-size: 3rem;
+  @media screen and (max-width: 800px) {
+    width: 40%;
+    font-size: 2rem;
+  }
+}
+
+.icons ul {
+  display: flex;
+}

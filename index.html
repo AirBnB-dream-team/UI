@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <title>BnB | Home</title>
     <meta name="description" content="landing page" />
+    <!-- <script
+      src="https://kit.fontawesome.com/f42eef6b89.js"
+      crossorigin="anonymous"
+    ></script> -->
     <link rel="stylesheet" href="./css/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -16,41 +20,71 @@
   <body>
     <header>
       <nav class="top-nav">
-        <img src="./images/favicon.ico" alt="BnB logo" id="logo" />
-        <div class="search-container">
+        <img
+          src="https://avatars3.githubusercontent.com/u/59102222?s=200&v=4"
+          alt="BnB logo"
+          id="logo"
+        />
+        <a href="index.html" id="active">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+      <section
+        style="box-shadow: 1px 5px 9px 4px rgba(33,32,33,1)"
+        id="banner-box"
+      >
+        <div class="form-box">
           <form>
-            <input type="text" placeholder="Search..." name="search" />
-            <button type="submit" class="btn">
-              <i class="fa fa-search"></i>
-            </button>
+            <button type="submit" class="btn-submit">Login</button><br />
+            <button type="submit" class="btn-submit">Sign-up</button>
           </form>
         </div>
-       <a href="#" id="active">Sign Up</a>
-        <a href="#">Login</a>
-        <a href="#">Host</a>
-      </nav>
-      <section class="banner-box">
-        <img
-          src="./images/daniil-silantev-nBuiLbz_j4A-unsplash.jpg"
-          alt="sunlit kitchen"
-          id="banner"
-        />
       </section>
     </header>
-    <div class="form-box">
-      <form>
-        <fieldset>
-          Where to:<br />
-          <input type="text" name="location" /><br />
-          Check-in:<br />
-          <input type="date" name="date" />
-          Checkout:
-          <input type="date" name="date" /><br>
-          How many:
-          <input type="number" name="people" /><br>
-          <button type="submit" id="btn-submit">Submit</button>
-        </fieldset>
-      </form>
-    </div>
+
+    <section class="explanation">
+      <p>
+        Looking for your next adventure, but unsure about cost? We want to help!
+        We'll find the best deals for you at the click of a button! Whether it's
+        nearby or far away, see what we have to offer with less stress on your
+        budget!
+      </p>
+    </section>
+    <section class="feature-box">
+      <div class="features">
+        <h4>Step One:</h4>
+        <p>
+          Tell us what you want by location, and housing preference such as
+          number of bed, bath - whatever you want!
+        </p>
+      </div>
+      <div class="features">
+        <h4>Step Two:</h4>
+        <p>
+          We search all over the web looking for your perfect deal! We provide
+          you with a variety of options to choose from!
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <nav>
+        <a href="# ">Contact</a>
+        <a href="# ">Careers</a>
+        <a href="# ">Privacy Policy</a>
+      </nav>
+      <div class="icons">
+        <ul>
+          <li>
+            <img src="images/instagramlogo.PNG" alt="instagram logo" />
+          </li>
+          <li>
+            <img src="images/twitterlogo.PNG" alt="twitter logo" />
+          </li>
+          <li>
+            <img src="images/facebooklogo.PNG" alt="facebook logo" />
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
