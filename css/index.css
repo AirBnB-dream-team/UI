@@ -184,7 +184,7 @@ form {
 #banner-box {
   background-color: "#f3f3f3";
   padding: 2%;
-  background-image: url("/images/homebanner.jpg");
+  background-image: url("../images/homebanner.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: 1px 14px 9px 4px #212021;
@@ -200,11 +200,11 @@ form {
   border: 5px solid white;
 }
 .form-box .btn-submit {
-  margin: 5% 15%;
-  padding: 30px 100px;
+  margin: 5% 2%;
+  padding: 25px 50px;
   border-radius: 3px;
-  width: 70%;
-  font-size: 3rem;
+  width: 250px;
+  font-size: 4rem;
   text-align: center;
   cursor: pointer;
 }
@@ -297,7 +297,7 @@ form {
   }
 }
 .explanation {
-  background-image: url("/images/family.jpg");
+  background-image: url("../images/family.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -460,7 +460,7 @@ form {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-image: url("/images/laptop.jpg");
+  background-image: url("../images/laptop.jpg");
 }
 @media (max-width: 800px) {
   .meet {
