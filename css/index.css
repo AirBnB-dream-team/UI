@@ -137,6 +137,13 @@ img {
 body {
   background-color: #ff896b;
 }
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -177,7 +184,7 @@ form {
 #banner-box {
   background-color: "#f3f3f3";
   padding: 2%;
-  background-image: url("/images/daniil-silantev-nBuiLbz_j4A-unsplash.jpg");
+  background-image: url("/images/homebanner.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: 1px 14px 9px 4px #212021;
@@ -290,7 +297,7 @@ form {
   }
 }
 .explanation {
-  background-image: url("/images/tyler-nix-V3dHmb1MOXM-unsplash.jpg");
+  background-image: url("/images/family.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -343,6 +350,13 @@ form {
   .features h4 {
     font-size: 2.5rem;
   }
+}
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
 }
 .headercontainer {
   display: flex;
@@ -446,7 +460,7 @@ form {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-image: url("/images/markus-petritz--LFe6Prglw4-unsplash.jpg");
+  background-image: url("/images/laptop.jpg");
 }
 @media (max-width: 800px) {
   .meet {
