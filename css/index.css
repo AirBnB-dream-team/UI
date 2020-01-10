@@ -137,13 +137,6 @@ img {
 body {
   background-color: #ff896b;
 }
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
-}
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -350,13 +343,6 @@ form {
   .features h4 {
     font-size: 2.5rem;
   }
-}
-@font-face {
-  font-family: 'Permanent Marker';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
 }
 .headercontainer {
   display: flex;
