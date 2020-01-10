@@ -137,6 +137,13 @@ img {
 body {
   background-color: #ff896b;
 }
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -181,54 +188,41 @@ form {
   background-size: cover;
   background-position: center;
   box-shadow: 1px 14px 9px 4px #212021;
+  display: flex;
+  justify-content: center;
 }
 .form-box {
   display: flex;
   flex-direction: column;
-  padding: 1%;
-  background-color: "#f3f3f3";
-  border: 10px solid "#e8d4b4";
-  width: 40%;
-}
-@media (max-width: 800px) {
-  .form-box {
-    padding: 2%;
-    font-size: 2rem;
-    line-height: 22px;
-    width: 44%;
-    border: 4px solid "#e8d4b4";
-  }
-}
-@media (max-width: 500px) {
-  .form-box {
-    width: 50%;
-    padding: 1%;
-  }
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 5px solid white;
 }
 .form-box .btn-submit {
   margin: 5% 15%;
-  padding: 20px 100px;
+  padding: 30px 100px;
   border-radius: 3px;
   width: 70%;
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
   cursor: pointer;
-  background-image: url("/images/marble-texture.png");
 }
 .form-box .btn-submit:hover {
-  border: 2px solid "#e8d4b4";
+  border: 2px solid black;
 }
 @media (max-width: 800px) {
   .form-box .btn-submit {
-    padding: 5px 30px;
-    margin: 5% 10%;
+    padding: 20px 70px;
+    margin: 5% 13%;
     width: 80%;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 500px) {
   .form-box .btn-submit {
-    padding: 4px 50px;
-    width: 90%;
+    padding: 10px 70px;
+    width: 50%;
   }
 }
 @media (max-width: 1000px) {
@@ -239,7 +233,7 @@ form {
 }
 .footer-section {
   display: flex;
-  background-color: #FFFFFF;
+  background-color: white;
   flex-direction: row;
 }
 .footer-section a {
@@ -357,84 +351,12 @@ form {
     font-size: 2.5rem;
   }
 }
-.easy {
-  text-align: center;
-  font-family: "Raleway", georgia;
-  font-size: 5rem;
-  padding: 1%;
-  margin: 2%;
-  width: 15%;
-  border-radius: 2px;
-  background-color: yellow;
-  animation-name: easy_baby;
-  animation-duration: 5s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-play-state: running;
-  position: relative;
-  animation-fill-mode: forwards;
-}
-@media (max-width: 800px) {
-  .easy {
-    font-size: 3rem;
-    padding: 1%;
-    margin: 2%;
-    width: 15%;
-  }
-}
-@keyframes easy_baby {
-  0% {
-    transform: rotate(0deg);
-    left: 0px;
-  }
-  25% {
-    transform: rotate(20deg);
-    left: 0px;
-  }
-  50% {
-    transform: rotate(0deg);
-    left: 500px;
-  }
-  @media (max-width: 800px) {
-    50% {
-      left: 200px;
-    }
-  }
-  @media (max-width: 500px) {
-    50% {
-      left: 0px;
-    }
-  }
-  75% {
-    transform: rotate(0deg);
-    left: 500px;
-  }
-  @media (max-width: 800px) {
-    75% {
-      left: 200px;
-    }
-  }
-  @media (max-width: 500px) {
-    75% {
-      left: 100px;
-    }
-  }
-  100% {
-    transform: rotate(-360deg);
-    left: 250px;
-  }
-  @media (max-width: 800px) {
-    100% {
-      left: 300px;
-    }
-  }
-  @media (max-width: 500px) {
-    100% {
-      left: 800px;
-    }
-  }
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
 }
 .headercontainer {
   display: flex;

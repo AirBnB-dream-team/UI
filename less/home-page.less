@@ -1,4 +1,4 @@
-// @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 .explanation p {
   line-height: 49px;
@@ -67,72 +67,5 @@
   }
   @media @mobile {
     font-size: 2.5rem;
-  }
-}
-
-.easy {
-  text-align: center;
-  font-family: "Raleway", georgia;
-  font-size: 5rem;
-  padding: 1%;
-  margin: 2%;
-  width: 15%;
-  border-radius: 2px;
-  background-color: yellow;
-  animation-name: easy_baby;
-  animation-duration: 5s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-play-state: running;
-  position: relative;
-  animation-fill-mode: forwards;
-  @media @tablet {
-    font-size: 3rem;
-    padding: 1%;
-    margin: 2%;
-    width: 15%;
-  }
-}
-
-@keyframes easy_baby {
-  0% {
-    transform: rotate(0deg);
-    left: 0px;
-  }
-  25% {
-    transform: rotate(20deg);
-    left: 0px;
-  }
-  50% {
-    transform: rotate(0deg);
-    left: 500px;
-    @media @tablet {
-      left: 200px;
-    }
-    @media @mobile {
-      left: 0px;
-    }
-  }
-  75% {
-    transform: rotate(0deg);
-    left: 500px;
-    @media @tablet {
-      left: 200px;
-    }
-    @media @mobile {
-      left: 100px;
-    }
-  }
-  100% {
-    transform: rotate(-360deg);
-    left: 250px;
-    @media @tablet {
-      left: 300px;
-    }
-    @media @mobile {
-      left: 800px;
-    }
   }
 }
