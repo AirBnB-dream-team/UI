@@ -139,14 +139,15 @@ body {
 }
 .top-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 1px solid #f3f3f3;
+  width: 100%;
 }
 .top-nav a {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
   align-items: center;
+  width: 100%;
   font-size: 20px;
   color: #f3f3f3;
 }
@@ -166,7 +167,7 @@ body {
   color: "#f3f3f3";
 }
 .logoIMG {
-  width: 45%;
+  width: 40%;
   height: auto;
 }
 form {
@@ -229,6 +230,10 @@ form {
     width: 150px;
     font-size: 2rem;
   }
+}
+#logo {
+  width: 20%;
+  height: auto;
 }
 .footer-section {
   display: flex;
